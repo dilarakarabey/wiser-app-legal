@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wiser Support</title><meta name="description" content="Help and contact for the Wiser iOS app.">
+<style>
+:root { --paper:#F7F4EE; --receipt:#FFFDF8; --ink:#141414; --ink2:#5C5A55; --rule:#D9D4C9; --accent:#3D2BE0; color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --paper:#1C1B19; --receipt:#282724; --ink:#F2EFE8; --ink2:#ABA79E; --rule:#3D3B36; --accent:#9D93FF; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.6 ui-rounded, -apple-system, "SF Pro Rounded", system-ui, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+nav { display:flex; gap:16px; flex-wrap:wrap; font-size:15px; margin-bottom:32px; }
+a { color: var(--accent); }
+h1 { font-size: 2rem; line-height:1.2; margin: 0 0 8px; }
+h2 { font-size: 1.25rem; margin-top: 2em; }
+code, .mono { font-family: ui-monospace, "SF Mono", monospace; }
+.card { background:var(--receipt); border:1px solid var(--rule); border-radius:6px; padding:16px; margin:16px 0; }
+.button { display:inline-block; background:var(--accent); color:var(--paper); text-decoration:none; padding:12px 20px; border-radius:12px; font-weight:600; }
+footer { margin-top:48px; font-size:14px; color:var(--ink2); }
+table { border-collapse: collapse; width:100%; display:block; overflow-x:auto; }
+th, td { border:1px solid var(--rule); padding:6px 8px; text-align:left; vertical-align:top; }
+</style></head>
+<body><main>
+<nav><a href="./">Wiser Support</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></nav>
+
+<h1>Wiser Support</h1>
+<p>Wiser is a game you play against your own judgment: lock a prediction, live with it, and see how well your confidence matched reality.</p>
+<div class="card">
+<p><strong>Need help?</strong> We usually reply within 2 business days.</p>
+<p><a class="email button" href="#" data-u="dilarakrby+wiser" data-d="gmail.com" data-subject="Wiser support">Contact support</a>
+<noscript>Email: dilarakrby+wiser [at] gmail [dot] com</noscript></p>
+</div>
+<h2>Where are my bets stored?</h2>
+<p>On your iPhone only. Wiser has no account, and no bet content is sent to us, to analytics or to the subscription service.</p>
+<h2>How do I delete my data?</h2>
+<p>In the app: <em>You → Settings → Delete all my data</em>. Deleting the app also removes everything. To delete your subscription records too, email us the <strong>Subscription ID</strong> shown under <em>Settings → Privacy</em>.</p>
+<h2>How do I cancel or manage Premium?</h2>
+<p>On your iPhone: <em>Settings → your name → Subscriptions → Wiser</em>. Cancelling takes effect at the end of the current period.</p>
+<h2>I bought Premium but the app says Free</h2>
+<p>Open <em>You → Settings → Restore Purchases</em> while signed in with the same Apple Account.</p>
+<h2>Refunds</h2>
+<p>Apple handles all payments and refunds: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+<h2>Is this gambling?</h2>
+<p>No. A “bet” in Wiser is a falsifiable personal prediction. There is no money staked, no wagering and nothing to win.</p>
+
+<footer>Wiser · Dilara Karabey, Ankara, Türkiye</footer>
+</main><script>
+document.querySelectorAll('a.email').forEach(function (a) {
+  var addr = a.dataset.u + '@' + a.dataset.d;
+  a.href = 'mailto:' + addr + (a.dataset.subject ? '?subject=' + encodeURIComponent(a.dataset.subject) : '');
+  if (a.dataset.show) a.textContent = addr;
+});
+</script></body></html>
